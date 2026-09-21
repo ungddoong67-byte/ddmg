@@ -157,6 +157,7 @@
       
         <div class="section local_area">
             <h3>📦 동대문구 퀵서비스 전차종 신속 배차 가이드</h3>
+          <p>신설동 용두동 제기동 전농동 답십리동 장안동 청량리동 회기동 휘경동 이문동 용신동 동대문 장안평 장한평 답십리 청량리 외대 시립대 청량리시장 동대문시장 경동시장 동대문운동장 동대문구 전지역</p>
             <ul>
                 <li>🏍️ 동대문구오토바이퀵 : 서류 및 긴급 소형 화물 최우선 신속한 배송</li>
                 <li>🚙 동대문구다마스퀵 : 날씨 영향 없는 중소형 짐 및 기업 소화물 안심 수송</li>
@@ -254,5 +255,28 @@
       </footer>
    </div>
 </div>
+  <script>
+  // 마우스 우클릭 차단
+  document.addEventListener('contextmenu', function (e) {
+    e.preventDefault();
+  });
+
+  // 드래그 차단
+  document.addEventListener('dragstart', function (e) {
+    e.preventDefault();
+  });
+
+  // 텍스트 선택(블록 지정) 차단
+  document.addEventListener('selectstart', function (e) {
+    e.preventDefault();
+  });
+
+  // 복사 키(Ctrl+C / Cmd+C) 차단
+  document.addEventListener('keydown', function (e) {
+    if ((e.ctrlKey || e.metaKey) && e.key === 'c') {
+      e.preventDefault();
+    }
+  });
+</script>
 </body>
 </html>
